@@ -1,0 +1,97 @@
+/* =========================
+   GENERAL STYLES
+========================= */
+
+:root {
+    --purple: #B8A1D9;
+    --light-purple: #F7F3FC;
+    --lilac: #D8C7E0;
+    --dark-purple: #3f3155;
+    --white: #FFFFFF;
+    --softaccent: #E8DDF5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--light-purple);
+    color: var(--dark-purple);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+header {
+    background-color: var(--white);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(63, 49, 85, 0.08);
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--dark-purple)
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--purple);
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 650px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        var(--purple),
+        var(--lilac)
+    );
+
+    padding: 80px 20px;
+}
+
