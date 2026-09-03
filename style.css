@@ -3,12 +3,12 @@
 ========================= */
 
 :root {
-    --purple: #B8A1D9;
-    --light-purple: #F7F3FC;
-    --lilac: #D8C7E0;
+    --purple: #945be3;
+    --light-purple: #d4b1ff;
+    --lilac: #cfaae0;
     --dark-purple: #3f3155;
     --white: #FFFFFF;
-    --softaccent: #E8DDF5;
+    --softaccent: #e7d1ff;
 }
 
 * {
@@ -150,3 +150,32 @@ header {
     padding: 100px 20px;
 }
 
+.section-content {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.section-label {
+    color: var(--purple);
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.section-content p:not(.section-label) {
+    font-size: 17px;
+    color: #665b72;
+    margin-bottom: 25px;
+}
+
+.text-link {
+    font-weight: bold;
+    color: var(--dark-purple)
+}
