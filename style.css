@@ -95,3 +95,58 @@ header {
     padding: 80px 20px;
 }
 
+.hero-content {
+    max-width: 800px;
+}
+
+.small-heading {
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    color: var(--white);
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    line-height: 1.1;
+    color: var(--white);
+    margin-bottom: 25px;
+}
+
+.hero p {
+    font-size: 19px;
+    color: var(--white);
+    margin-bottom: 35px;
+}
+
+.button {
+    display: inline-block;
+
+    background-color: var(--white);
+    color: var(--dark-purple);
+
+    padding: 13px 30px;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(63, 49, 85, 0.2);
+}
+
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about-preview {
+    background-color: var(--white);
+    padding: 100px 20px;
+}
+
