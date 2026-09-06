@@ -370,3 +370,54 @@ footer {
         font-size: 30px;
     }
 }
+
+/* =========================
+   ABOUT PAGE HEADER
+========================= */
+.page-header{
+    background: linear-gradient(
+        135deg,
+        var(--purple),
+        var(--lilac)
+    );
+    text-align: center;
+    padding: 100px 20px;
+    color: var(--white);
+}
+
+.page-header .section-label{
+    color: var(--white)
+}
+
+.page-header h1 {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.page-header p:last-child {
+    font-size: 18px;
+}
+
+/* =========================
+   ABOUT SECTION
+========================= */
+.about-section{
+    background-color: var(--white);
+    padding: 100px 30px;
+}
+
+.about-text {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+}
+
+.about-text p:not(.section-label) {
+    color: #665b72;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+/* =========================
+   MISSION & VISION
+========================= */
