@@ -422,7 +422,7 @@ footer {
    MISSION & VISION
 ========================= */
 .mission-section {
-    background-color: var(--lilac);
+    background-color: var(--soft-purple);
     padding: 100px 30px;
 }
 .mission-header {
@@ -441,7 +441,7 @@ footer {
 }
 
 .info-card {
-    background-color: var(--soft-purple);
+    background-color: var(--white);
     padding: 45px;
     border-radius: 25px;
 }
