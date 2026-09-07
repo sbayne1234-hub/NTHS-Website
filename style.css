@@ -5,7 +5,7 @@
 :root {
     --purple: #8e50e4;
     --light-purple: #d4b1ff;
-    --lilac: #cfaae0;
+    --lilac: #d5bbf4;
     --dark-purple: #3f3155;
     --white: #FFFFFF;
     --soft-purple: #e7d1ff;
@@ -422,9 +422,19 @@ footer {
    MISSION & VISION
 ========================= */
 .mission-section {
-    max-width: 110px;
-    margin: auto;
+    background-color: var(--lilac);
     padding: 100px 30px;
+}
+.mission-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.mission-header .section-label {
+    color: var(--dark-purple);
+}
+.mission-container {
+    max-width: 1100px;
+    margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
@@ -435,8 +445,11 @@ footer {
     padding: 45px;
     border-radius: 25px;
 }
-
-.info-card p:last-child {
+.info-card h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.info-card p {
     color: #665b72;
 }
 
@@ -445,7 +458,7 @@ footer {
 ========================= */
 .why-section {
     background-color: var(--light-purple);
-    padding: 100px 30px;
+    padding: 120px 30px;
     text-align: center;
 }
 
@@ -468,7 +481,7 @@ footer {
     margin-bottom: 10px;
 }
 
-.benfit-card p {
+.benefit-card p {
     color: #665b72;
     font-size: 15px;
 }
@@ -505,7 +518,7 @@ footer {
 }
 
 @media (max-width: 500px) {
-    .benefit-continer {
+    .benefit-container {
         grid-template-columns: 1fr;
     }
     .info-card {
