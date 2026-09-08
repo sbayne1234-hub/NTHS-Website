@@ -52,9 +52,18 @@ header {
 }
 
 .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-size: 28px;
     font-weight: bold;
     color: var(--dark-purple)
+}
+
+.logo img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
 }
 
 .nav-links {
