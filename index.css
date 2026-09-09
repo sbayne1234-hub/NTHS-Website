@@ -148,7 +148,6 @@ header {
     box-shadow: 0 8px 20px rgba(63, 49, 85, 0.2);
 }
 
-
 /* =========================
    ABOUT SECTION
 ========================= */
@@ -191,7 +190,6 @@ h2 {
 .text-link:hover {
     color: var(--purple)
 }
-
 
 /* =========================
    PILLARS
@@ -242,7 +240,6 @@ h2 {
     font-size: 15px;
 }
 
-
 /* =========================
    EVENTS
 ========================= */
@@ -253,7 +250,7 @@ h2 {
     text-align: center;
 }
 
-.event-container {
+.events-container {
     max-width: 1100px;
     margin: 50px auto 0;
 
@@ -262,7 +259,7 @@ h2 {
     gap: 25px;
 }
 
-.event-card {
+.events-container .event-card {
     background-color: var(--white);
 
     padding: 35px;
@@ -294,7 +291,6 @@ h2 {
 .event-card a:hover {
     color: var(--purple)
 }
-
 
 /* =========================
    FOOTER
@@ -332,7 +328,6 @@ footer {
     opacity: 0.7;
 }
 
-
 /* =========================
    MOBILE
 ========================= */
@@ -358,11 +353,10 @@ footer {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .event-container {
+    .events-container {
         grid-template-columns: 1fr;
     }
 }
-
 
 @media (max-width: 500px) {
 
@@ -378,3 +372,4 @@ footer {
         font-size: 30px;
     }
 }
+
