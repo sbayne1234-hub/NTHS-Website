@@ -85,6 +85,42 @@ header {
 }
 
 /* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: var(--dark-purple);
+    color: var(--white);
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 900px;
+    margin: auto;
+}
+
+.footer-content h2 {
+    margin-bottom: 5px;
+}
+
+.footer-links {
+    margin: 25px 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.footer-links a:hover {
+    color: var(--lilac);
+}
+
+.copyright {
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+/* =========================
    PAGE HEADER
 ========================= */
 .page-header {
@@ -93,7 +129,7 @@ header {
         var(--purple),
         var(--lilac)
     );
-    text-align: centner;
+    text-align: center;
     padding: 100px 20px;
     color: var(--white);
 }
@@ -123,4 +159,202 @@ header {
 .section-label {
     color: var(--purple);
     font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.section-content p:not(.section-label) {
+    color: #665b72;
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+/* =========================
+   MEMBERSHIP INTRO
+========================= */
+
+.membership-intro {
+    background-color: var(--white);
+    padding: 100px 30px;
+}
+
+/* =========================
+   REQUIREMENTS
+========================= */
+.requirements-section {
+    background-color: var(--soft-purple);
+    padding: 100px 30px;
+}
+
+.requirements-container {
+    max-width: 1100px;
+    margin: 50px auto 0;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.requirement-card {
+    background-color: var(--white);
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(63, 49, 85, 0.08);
+    transition: 0.3s;
+}
+
+.requirement-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 25px rgba(63, 49, 85, 0.12);
+}
+
+.requirement-number {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: var(--purple);
+    margin-bottom: 10px;
+}
+
+.requirement-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.requirement-card p {
+    color: #665b72;
+    font-size: 15px;
+}
+
+/* =========================
+   MEMBERSHIP BENEFITS
+========================= */
+
+.membership-benefits {
+    background-color: var(--light-purple);
+    padding: 100px 30px;
+}
+
+.benefits-container {
+    max-width: 1100px;
+    margin: 50px auto 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.membership-card {
+    background-color: var(--white);
+    padding: 35px 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(63, 49, 85, 0.08);
+    transition: 0.03s;
+}
+
+.membership-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 25px rgba(63, 49, 85, 0.12);
+}
+
+.membership-card .icon {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.membership-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.membership-card p {
+    color: #665b72;
+    font-size: 15px;
+}
+
+/* =========================
+   JOIN SECTION
+========================= */
+
+.join-section {
+    background-color: var(--white);
+    padding: 110px 30px;
+    text-align: center;
+}
+
+.join-content {
+    max-width: 750px;
+    margin: auto;
+}
+
+.join-content p:not(.section-label) {
+    color: #665b72;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.button {
+    display: inline-block;
+    background-color: var(--purple);
+    color: var(--white);
+    padding: 13px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: var(--dark-purple);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(63, 49, 85, 0.2);
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+    .page-header h1 {
+        font-size: 42px;
+    }
+
+    .requirements-container {
+        grid-template-columns: 1fr;
+    }
+
+    .benefits-container {
+        grid-template-columns: repeat(2, 1fr)
+    }
+}
+
+
+@media (max-width: 500px) {
+    .page-header h1 {
+        font-size: 35px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    .benefits-container {
+        grid-template-columns: 1fr;
+    }
+    .requirement-card {
+        padding: 30px;
+    }
+    .membership-card {
+        padding: 30px 20px;
+    }
+    .page-header {
+        padding: 80px 20px;
+    }
 }
