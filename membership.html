@@ -8,140 +8,196 @@
     <link rel="stylesheet" href="membership.css">
 </head>
 
-<body>
+    <body>
 
-    <!-- Navigation -->
-     <header>
-            <nav class="navbar">
+            <!-- Navigation -->
+            <header>
+                <nav class="navbar">
 
-                <div class="logo">
-                    <img src="images/nthslogo.png" alt="National Technical Honor Society Logo">
-                    <span>NTHS</span>
+                    <div class="logo">
+                        <img src="images/nthslogo.png" alt="National Technical Honor Society Logo">
+                        <span>NTHS</span>
+                    </div>
+
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="membership.html">Membership</a></li>
+                        <li><a href="leadership.html">Leadership</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+
+                </nav>
+             </header>
+
+        <!-- Page Header -->
+        <section class="page-header">
+            <p class="section-label">BECOME A MEMBER</p>
+            <h1>Membership</h1>
+            <p>
+                Join a community that celebrates technical achievement, leadership, and career readiness.
+            </p>
+        </section>
+
+        <!-- Eligibility Section -->
+        <section class="membership-intro">
+            <div class="section-content">
+                <p class="section-label">WHO CAN JOIN?</p>
+                <h2>Can you do it?</h2>
+                <p>
+                    NTHS membership recognizes students who have demonstrated excellence in their career and technical education programs and are committed to leadership and personal growth.
+                </p>
+            </div>
+        </section>
+
+        <!-- Requirements Section -->
+        <section class="requirements-section">
+            <div class="section-content">
+                <p class="section-label">MEMBERSHIP REQUIREMENTS</p>
+                <h2>What Does It Take?</h2>
+            </div>
+            <div class="requirements-container">
+                <div class="requirement-card">
+                    <div class="requirement-number">01</div>
+                    <h3>Academic Excellence</h3>
+                    <p>
+                        Maintain a minimum unweighted GPA of 3.0 or higher.
+                    </p>
                 </div>
+                <div class="requirement-card">
+                    <div class="requirement-number">02</div>
+                    <h3>Technical Achievement</h3>
+                    <p>
+                        Demonstrate commitment and achievement in your career and technical education program by obtaining at least 1 high school certification.
+                    </p>
+                </div>
+                <div class="requirement-card">
+                    <div class="requirement-number">03</div>
+                    <h3>Academic Commitment</h3>
+                    <p>
+                        Must have been in and passed TWO CTE classes.
+                    </p>
+                </div>
+                <div class="requirement-card">
+                    <div class="requirement-number">04</div>
+                    <h3>Character</h3>
+                    <p>
+                        Demonstrate good character and commitment in your CTE classes.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="membership.html">Membership</a></li>
-                    <li><a href="leadership.html">Leadership</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-
-            </nav>
-         </header>
-
-    <!-- Page Header -->
-     <section class="page-header">
-        <p class="section-label">BECOME A MEMBER</p>
-        <h1>Membership</h1>
-        <p>
-            Join a community that celebrates technical achievement, leadership, and career readiness.
-        </p>
-     </section>
-
-     <!-- Eligibility Section -->
-      <section class="membership-intro">
-        <div class="section-content">
-            <p class="section-label">WHO CAN JOIN?</p>
-            <h2>Can you do it?</h2>
-            <p>
-                NTHS membership recognizes students who have demonstrated excellence in their career and technical education programs and are committed to leadership and personal growth.
-            </p>
-        </div>
-      </section>
-
-    <!-- Requirements Section -->
-    <section class="requirements-section">
-        <div class="section-content">
-            <p class="section-label">MEMBERSHIP REQUIREMENTS</p>
-            <h2>What Does It Take?</h2>
-        </div>
-        <div class="requirements-container">
-            <div class="requirement-card">
-                <div class="requirement-number">01</div>
-                <h3>Academic Excellence</h3>
+        <!-- Eligibility Checker -->
+        <section class="eligibility-section">
+            <div class="section-content">
+                <p class="section-label">CHECK YOUR ELIGIBILITY</p>
+                <h2>Do You Meet the Requirements?</h2>
                 <p>
-                    Maintain a minimum unweighted GPA of 3.0 or higher.
+                    Enter your information below to see which membership requirements you currently meet.
                 </p>
             </div>
-            <div class="requirement-card">
-                <div class="requirement-number">02</div>
-                <h3>Technical Achievement</h3>
-                <p>
-                    Demonstrate commitment and achievement in your career and technical education program by obtaining at least 1 high school certification.
-                </p>
+            <div class="eligibility-container">
+                <div class="eligibility-form">
+                    <div class="form-group">
+                        <label for="gpa">Unweighted GPA</label>
+                        <input
+                            type="number"
+                            id="gpa"
+                            min="0"
+                            max="4"
+                            step="0.01"
+                            placeholder="Example: 3.2"
+                        >
+                    </div>
+                    <div class="form-group">
+                        <label for="certification">
+                            Do you have atleast one CTE certification?
+                        </label>
+                        <select id="certification">
+                            <option value="">Select an option</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="cteClasses">
+                            How many CTE classes have you completed?
+                        </label>
+                        <input
+                            type="number"
+                            id="cteClasses"
+                            min="0"
+                            placeholder="Example: 2"
+                        >
+                    </div>
+                    <button type="button" class="button" id="checkEligibility">
+                        Check My Eligibility
+                    </button>
+                </div>
+                <div class="eligibility-result" id="eligibilityResult">
+                    <h3>Your Results</h3>
+                    <p>
+                        Enter your information above to check your requirements.
+                    </p>
+                </div>
             </div>
-            <div class="requirement-card">
-                <div class="requirement-number">03</div>
-                <h3>Academic Commitment</h3>
-                <p>
-                    Must have been in and passed TWO CTE classes.
-                </p>
-            </div>
-            <div class="requirement-card">
-                <div class="requirement-number">04</div>
-                <h3>Character</h3>
-                <p>
-                    Demonstrate good character and commitment in your CTE classes.
-                </p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Benefits Section -->
-     <section class="membership-benefits">
-        <div class="section-content">
-            <div class="section-label">MEMBERSHIP BENEFITS</div>
-            <h2>Why Become a Member?</h2>
-        </div>
-        <div class="benefits-container">
-            <div class="membership-card">
-                <div class="icon">⭐</div>
-                <h3>Recognition</h3>
-                <p>
-                    Be recognized for your accomplishments in career and technical education.
-                </p>
+        <!-- Benefits Section -->
+        <section class="membership-benefits">
+            <div class="section-content">
+                <div class="section-label">MEMBERSHIP BENEFITS</div>
+                <h2>Why Become a Member?</h2>
             </div>
-            <div class="membership-card">
-                <div class="icon">🤝</div>
-                <h3>Community</h3>
-                <p>
-                    Connect with students who share the same interests and goals as you.
-                </p>
+            <div class="benefits-container">
+                <div class="membership-card">
+                    <div class="icon">⭐</div>
+                    <h3>Recognition</h3>
+                    <p>
+                        Be recognized for your accomplishments in career and technical education.
+                    </p>
+                </div>
+                <div class="membership-card">
+                    <div class="icon">🤝</div>
+                    <h3>Community</h3>
+                    <p>
+                        Connect with students who share the same interests and goals as you.
+                    </p>
+                </div>
+                <div class="membership-card">
+                    <div class="icon">💼</div>
+                    <h3>Career Preparation</h3>
+                    <p>
+                        Develop experience and skills that can help prepare you for your future career.
+                    </p>
+                </div>
+                <div class="membership-card">
+                    <div class="icon">🌟</div>
+                    <h3>Opportunities</h3>
+                    <p>
+                        Take part in activities that help you grow as a leader and a professional in your field of study.
+                    </p>
+                </div>
             </div>
-            <div class="membership-card">
-                <div class="icon">💼</div>
-                <h3>Career Preparation</h3>
-                <p>
-                    Develop experience and skills that can help prepare you for your future career.
-                </p>
-            </div>
-            <div class="membership-card">
-                <div class="icon">🌟</div>
-                <h3>Opportunities</h3>
-                <p>
-                    Take part in activities that help you grow as a leader and a professional in your field of study.
-                </p>
-            </div>
-        </div>
-     </section>
+        </section>
 
-     <!-- How to Join Section -->
-      <section class="join-section">
-        <div class="join-content">
-            <p class="section-label">READY TO JOIN?</p>
-            <h2>Start Your NTHS Journey</h2>
-            <p>
-                Think you meet the requirements? Submit your application to be considered for membership.
-            </p>
-            <a href="APPLY" class="button" target="_blank">
-                Apply Now
-            </a>
-        </div>
-      </section>
+        <!-- How to Join Section -->
+        <section class="join-section">
+            <div class="join-content">
+                <p class="section-label">READY TO JOIN?</p>
+                <h2>Start Your NTHS Journey</h2>
+                <p>
+                    Think you meet the requirements? Submit your application to be considered for membership.
+                </p>
+                <a href="APPLY" class="button" target="_blank">
+                    Apply Now
+                </a>
+            </div>
+        </section>
 
-       <!-- Footer -->
-           <footer>
+        <!-- Footer -->
+        <footer>
             <div class="footer-content">
                 <h2>NTHS</h2>
                 <p>
@@ -154,10 +210,10 @@
                     <a href="contact.html">Contact</a>
                 </div>
                 <p class="copyright">
-                     &copy; 2026 National Technical Honor Society. All rights reserved.
+                    &copy; 2026 National Technical Honor Society. All rights reserved.
                 </p>
             </div>
-           </footer>
-</body>
-</body>
+        </footer>
+        <script src="membership.js"></script>
+    </body>
 </html>

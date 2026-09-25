@@ -233,6 +233,92 @@ h2 {
 }
 
 /* =========================
+   ELIGIBILITY CHECKER
+========================= */
+.eligibility-section {
+    background-color: var(--white);
+    padding: 100px 30px;
+}
+
+.eligibility-container {
+    max-width: 900px;
+    margin: 50px auto 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.eligibility-form {
+    background-color: var(--soft-purple);
+    padding: 35px;
+    border-radius: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 13px 15px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background-color: var(--white);
+    color: var(--dark-purple);
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: var(--purple);
+}
+
+.eligibility-result {
+    background-color: var(--light-purple);
+    padding: 35px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.eligibility-result h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.eligibility-result p {
+    color: #665b72;
+}
+
+.requirement-result {
+    margin-top: 15px;
+    padding: 12px 15px;
+    background-color: var(--white);
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.requirement-met {
+    border-left: 5px solid var(--purple);
+}
+
+.requirement-not-met {
+    border-left: 5px solid var(--dark-purple);
+}
+
+/* =========================
    MEMBERSHIP BENEFITS
 ========================= */
 
@@ -255,7 +341,7 @@ h2 {
     border-radius: 20px;
     text-align: center;
     box-shadow: 0 5px 20px rgba(63, 49, 85, 0.08);
-    transition: 0.03s;
+    transition: 0.3s;
 }
 
 .membership-card:hover {
@@ -340,19 +426,15 @@ h2 {
         font-size: 42px;
     }
 
-    .membership-benefits {
+    .benefits-container {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .requirements-section {
+    .requirements-container {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .membership-intro {
-        grid-template-columns: 1fr;
-    }
-
-    .join-section {
+    .eligibility-container{
         grid-template-columns: 1fr;
     }
 }
@@ -377,5 +459,12 @@ h2 {
     }
     .page-header {
         padding: 80px 20px;
+    }
+    .eligibility-section {
+        padding: 25px;
+    }
+    .eligibility-form,
+    .eligibility-result {
+        padding: 25px;
     }
 }
