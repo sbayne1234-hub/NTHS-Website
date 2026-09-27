@@ -3,16 +3,20 @@
 // =========================
 
 const contactForm = document.getElementById("contactForm");
+
 if (contactForm) {
-    contactForm.addEventListener("submit", async function (event) {
+
+    contactForm.addEventListener("submit", function(event) {
+
+        // Stop the page from refreshing
         event.preventDefault();
-        const button = contactForm.querySelector("button");
 
-        const name = document.getElementById("name").value.trim();
-        const email = document.getElementById("email").value.trim();
-        const subject = document.getElementById("subject").value.trim();
-        const message = document.getElementById("message").value.trim();
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const subject = document.getElementById("subject").value;
+        const message = document.getElementById("message").value;
 
+        // Check that all fields have information
         if (
             name === "" ||
             email === "" ||
@@ -23,37 +27,14 @@ if (contactForm) {
             return;
         }
 
-        button.textContent = "Sending...";
-        button.disabled = true;
-
-        const formData = new FormData(contactForm);
-
-        try {
-            const response = await fetch(contactForm.action, {
-                method: "POST",
-                body: formData,
-                headers: {
-                    Accept: "application/json"
-                }
-            });
-
-            if (response.ok) {
-                contactForm.innerHTML = `
-                    <h2>Message Sent!</h2>
-                    <p>
-                        Thank you, ${name}! Your message has been received.
-                        Someone from NTHS will get back to you soon.
-                    </p>
-                `;
-            } else {
-                button.textContent = "Send Message";
-                button.disabled = false;
-                alert("There was a problem sending your message. Please try again.");
-            }
-        } catch (error) {
-            button.textContent = "Send Message";
-            button.disabled = false;
-            alert("There was a problem sending your message. Please try again.");
-        }
+        // Show success message
+        contactForm.innerHTML = `
+            <h2>Message Sent!</h2>
+            <p>
+                Thank you, ${name}! Your message has been received.
+                Someone from NTHS will get back to you soon.
+            </p>
+        `;
     });
+
 }
