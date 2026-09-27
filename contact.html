@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Leadership | NTHS</title>
+    <title>Contact | NTHS</title>
 
     <link rel="stylesheet" href="contact.css">
 </head>
@@ -79,7 +79,11 @@
             <!-- Contact Form -->
             <div class="contact-form">
                 <h2>Send Us a Message</h2>
-                <form>
+                <form 
+                    id="contactForm"
+                    action="https://formspree.io/f/xzezaogb"
+                    method="POST"
+                >
                     <div class="form-group">
                         <label for="name">Name</label>
                         <input
@@ -101,7 +105,7 @@
                         >
                     </div>
                     <div class="form-group">
-                        <label for="email">Subject</label>
+                        <label for="subject">Subject</label>
                         <input
                             type="text"
                             id="subject"
@@ -111,7 +115,7 @@
                         >
                     </div>
                     <div class="form-group">
-                        <label for="subject">Message</label>
+                        <label for="message">Message</label>
                         <textarea
                             id="message"
                             name="message"
