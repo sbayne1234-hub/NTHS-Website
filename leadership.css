@@ -242,6 +242,30 @@ h2 {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
+}
+
+.lily-photo {
+    width: 100%;
+    height: 280px;
+    flex-shrink: 0;
+    overflow: hidden;
+    background-color: var(--soft-purple);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--purple);
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.lily-photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 20%;
 }
 
 /* =========================
